@@ -905,6 +905,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8518945365003036849}
   - component: {fileID: 8149307783236433548}
+  - component: {fileID: 4876989119721925024}
+  - component: {fileID: -2321888772863288324}
   m_Layer: 0
   m_Name: FlowerBlue
   m_TagString: Untagged
@@ -958,6 +960,42 @@ LODGroup:
     - renderer: {fileID: 5520118204860536504}
     - renderer: {fileID: 2908472582658829251}
   m_Enabled: 1
+--- !u!135 &4876989119721925024
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6901601049272869541}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-2321888772863288324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6901601049272869541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6618ab05f8108d47b29f02624a953a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameOfPlant: 'Lupinus '
+  displayUI: {fileID: 0}
+  textMeshProPlantName: {fileID: 0}
 --- !u!1 &8075329071769746390
 GameObject:
   m_ObjectHideFlags: 0
