@@ -27,6 +27,11 @@ public class VanOwnerDialogue : MonoBehaviour
                 //Display NPC Dialogue
                 nPCDialogue.SetActive(true);
 
+                if(InventoryManager.lupineAmount >= 5)
+                {
+                    InventoryManager.lupineAmount = InventoryManager.lupineAmount - 5;
+                }
+
                 //Check if player have enough Lupines 
                 //if they have enough take them and give them a new different plant
             }

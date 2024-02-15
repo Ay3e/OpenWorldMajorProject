@@ -13,6 +13,8 @@ public class PlantPickUp : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI textMeshProPlantName;
 
+    [SerializeField] private GameObject lupineMaterialFact;
+
 
     // Update is called once per frame
     void Update()
@@ -23,7 +25,11 @@ public class PlantPickUp : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.F))
             {
                 PlayerNotInTriggerAction();
-                Destroy(gameObject);
+                //Lupine UI
+                InventoryManager.lupineAmount++;
+                //Display Lupine Fact
+                lupineMaterialFact.SetActive(true);
+                gameObject.SetActive(false);
             }
         }
         else
